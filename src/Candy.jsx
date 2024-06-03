@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 /** Candy component
  *
@@ -11,7 +12,7 @@ function Candy() {
   return (
     <div>
       <p>Candy</p>
-      <Link to="/" />
+      <Link to="/">Home</Link>
     </div>
   )
 }

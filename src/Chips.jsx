@@ -12,7 +12,7 @@ function Chips() {
   return (
     <div>
       <p>Chips</p>
-      <Link to="/" />
+      <Link to="/">Home</Link>
     </div>
   );
 }

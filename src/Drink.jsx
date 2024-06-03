@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 /** Drink component
  *
@@ -11,7 +12,7 @@ function Drink() {
   return (
     <div>
       <p>Soda</p>
-      <Link to="/" />
+      <Link to="/">Home</Link>
     </div>
   )
 }
