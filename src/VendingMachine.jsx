@@ -20,6 +20,7 @@ function VendingMachine() {
           <Route path="/drink" element={<Drink/>} />
           <Route path="/candy" element={<Candy/>} />
           <Route path="/" element={<Home/>} />
+          <Route path="*" element={<Home/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
