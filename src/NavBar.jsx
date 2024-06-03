@@ -1,17 +1,52 @@
-import { Link } from "react-router-dom";
-import Home from "./Home.jsx";
-import Drink from "./Drink.jsx";
-import Chips from "./Chips.jsx";
-import Candy from "./Candy.jsx";
+import { NavLink } from "react-router-dom";
+
 
 function NavBar() {
+
+  const activeStyle = {
+    color: "black",
+    textDecoration: "none"
+  };
+
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/chips">Chips</Link></li>
-        <li><Link to="/drink">Drink</Link></li>
-        <li><Link to="/candy">Candy</Link></li>
+        <li>
+          <NavLink to="/"
+                   style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                  }
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/chips"
+                   style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                  }
+          >
+            Chips
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/drink"
+                   style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                  }
+          >
+            Drink
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/candy"
+                   style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                  }
+          >
+            Candy
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
