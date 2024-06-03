@@ -11,7 +11,7 @@ function Candy() {
   return (
     <div>
       <p>Candy</p>
-      <button onClick={ evt => navigate("/") }>Go Back</button>
+      <Link to="/" />
     </div>
   )
 }

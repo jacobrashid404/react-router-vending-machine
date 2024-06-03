@@ -11,7 +11,7 @@ function Drink() {
   return (
     <div>
       <p>Soda</p>
-      <button onClick={ evt => navigate("/") }>Go Back</button>
+      <Link to="/" />
     </div>
   )
 }

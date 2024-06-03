@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 /** Chips component
  *
@@ -11,7 +12,7 @@ function Chips() {
   return (
     <div>
       <p>Chips</p>
-      <button onClick={ evt => navigate("/") }>Go Back</button>
+      <Link to="/" />
     </div>
   );
 }
